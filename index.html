@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Link generator</title>
+</head>
+<style>
+    .grid {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    a {
+        padding-bottom: 20px;
+    }
+</style>
+
+<body>
+    <div class="grid">
+        <div class="box">
+            <button class="button" id="button">Генерировать</button>
+            <div id="link">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        'use strick';
+document.addEventListener('DOMContentLoaded', function(){
+
+    var first = 'https://arm.frontmanager.com.ua/PublicApi/TicketWidgetSvg.aspx?__uid=ENqr2bjXH5FUPXHRS3ptXQ&event=';
+    var second = '&c=eee&lang=ru&replaceFlags=1';
+    var parent = document.getElementById('link');
+
+    button.onclick = function() {
+        var id = prompt('Введите ID мероприятия', );
+       
+        var a = document.createElement('a');
+        var linkText = document.createTextNode( first + id + second);
+        a.appendChild(linkText);
+        a.href = first + id + second;
+        parent.appendChild(a);
+      };
+});
+    </script>
+</body>
+</html>
