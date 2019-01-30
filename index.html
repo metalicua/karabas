@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
         var id = prompt('Введите ID мероприятия', );
        
         var a = document.createElement('a');
-        var linkText = document.createTextNode( first + id + second);
+        var linkText = document.createTextNode( first + id + second );
         a.appendChild(linkText);
         a.href = first + id + second;
         parent.appendChild(a);
